@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating Images</title>
+    <style>
+        .clear {
+            overflow: auto;
+        }
+
+       
+
+        p {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+         img {
+            width: 200px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    float:left; demek resimin sol tarafta olması demek right deseydik sağ tarafta resim sol tarafta yazı olucaktı.<br>
+    margin-right:10px; demek resim ile yazı arasındaki boşluk demektir.<br>
+    p ye border ekleyince resimde taşma meydana geliyor bunu engellemek için overflow yapıcaz.<br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure at est quo assumenda doloribus sed nisi libero repellat adipisci eum blanditiis, asperiores tempore nemo beatae magnam, aliquam quis. Explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia est, nam explicabo. Voluptatum similique quos molestiae! Ipsa velit molestiae repellat accusantium similique, dignissimos voluptates, sapiente, doloremque dolore quasi perferendis alias.</p>
+    <p class="clear">
+        <img src="devre.jpg" alt="devre">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat distinctio animi dolores. Ea, impedit. Quas,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa unde ut ab quam, possimus dolorem ipsum facilis quaerat tempora?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti numquam, similique ducimus fugit unde laudantium possimus officia, atque, consequuntur aspernatur quo velit qui. Repellendus similique incidunt placeat dicta molestiae!
+       
+    </p>
+
+</body>
+
+</html>

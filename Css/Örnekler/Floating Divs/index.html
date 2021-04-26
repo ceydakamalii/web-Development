@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating Divs</title>
+    <style>
+        #container {
+            background: gray;
+        }
+
+        .box {
+            width: 170px;
+            height: 170px;
+            margin: 2px;
+
+        }
+
+        #first {
+            background: red;
+            float: right;
+
+        }
+
+        #second {
+            background: blue;
+            float: right;
+
+        }
+
+        #third {
+            background: green;
+            float: right;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    taşma meydana geldi arka plan gri değil bunu engellemek için yeni bir class oluşturup overflow işlemi yapıcaz veya yeni bir div oluşturup stylesine clear:both; yazarzak aynı işlevi görmüş olcak.veya bir sınıf oluştutp pseudo selectoru yani :after kullanarakta çözebiliriz.<br>
+    <div id="container" class="clearfix">
+        <div id="first" class="box"></div>
+        <div id="second" class="box"></div>
+        <div id="third" class="box"></div>
+
+    </div>
+
+</body>
+
+</html>

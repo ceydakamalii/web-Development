@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Background Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /*---> View Port görünür alan demektir.Wiew Portun kısaltması v dir. vw ise  genişliği(width-w) ,vh ise yüksekliği (height-h)<br>
+         ---> Bakış Alanı = Tarayıcı Penceresi Boyutu = Window Nesnesi.<br>
+        ---> Bakış Alanının %1 değeri bu üçüne de eşittir. Örneğin Bakış alanı 50cm ise 1vw = 0.5cm’dir.<br>
+        ---> Bir elemanın yüksekliğinin yarısını ifade etmek için height:50vh; demeliyiz.yani yüzde 50 oluyor buda view portun yüzde 50 si demek.<br>
+        ---> 1vw = Bakış Alanı genişliğinin %1<br>
+        ---> 1vh = Bakış Alanı yüksekliğinin %1<br>
+        ---> 1vmin = 1vw veya 1vh hangisi küçük ise ona eşdeğer<br>
+        ---> 1vmax = 1vw veya 1vh hangisi büyük ise ona eşdeğer<br>
+        ---> bir renkten başka renge geçişi için background-img:linear-gradient(to left bottom ,rgba(102,255,102,0.7),rgba(230,255,230,0.7)),yaptık to left bottom ise soldan alta doğru renk geçişini yaptık.
+        --->  clip-path: polygon(Başlngıç kordinat,en sağ köşe(y kordinatı değişmiyor),en alt köşe(x değeri en sağdaki hali),istediğin yere gitmek istediğin kordinat)
+        --->  transform: translate(solsan sağa,yukardan aşağıya) konumlandırmadır.soldan sağa gider tam tersini istersek - işareti kullancaz <br>*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .header {
+            background-image:
+                linear-gradient(to left bottom, rgba(102, 255, 102, 0.7), rgba(230, 255, 230, 0.7)),
+                url(img/6.jpg);
+            height: 95vh;
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            position: relative;
+
+
+        }
+
+        .heading {
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .heading-main {
+            display: block;
+            font-size: 50px;
+            letter-spacing: 10px;
+        }
+
+        .heading-sub {
+            display: block;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .logo-box{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        .logo{
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo-box">
+            <img class="logo" src="img/6.jpg" alt="">
+        </div>
+
+
+
+
+
+        <h1 class="heading">
+
+            <span class="heading-main">Main Title</span>
+            <span class="heading-sub">Sub Title</span>
+        </h1>
+
+
+    </div>
+
+</body>
+
+</html>

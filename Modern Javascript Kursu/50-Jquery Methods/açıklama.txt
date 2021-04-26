@@ -1,0 +1,16 @@
+.text()-->seçilen elemanının text metodu o içerikteki textleri getirir.Birleştirerek 
+.val()-->o inputa yazılan değeri verir.
+.addClass()-->belirlenen clası ekler.
+.removeClass()-->belirlenen clası çıkartır.
+.toggleClass()-->belirlenen class ekli değilse ekler ekli ise siler.
+.attr()-->o etiketin hrefi , typesi , ve daha çok özelliği 
+.show(milisaniye,fonksiyon)-->herhangi bir elemanı ekranda gösteriyor.
+.hide(milisaniye,fonksiyon)-->herhangi bir elemanı saklıyor ekranda gözükmüyor.
+.toggle(milisaniye,fonksiyon)-->herhangi bir eleman görünüyorsa saklar saklıysa gösterir.
+.fadeIn(milisaniye,fonksiyon)-->opacity 0 iken 1 getirir.
+.fadeOut(milisaniye,fonksiyon)-->opacity 1 iken 0 a getirir.
+.fadeToggle(milisaniye,fonksiyon)-->nesne görünüyorsa onu gizler nesne görünmüyorsa gösterir.
+.fadeTo(milisaniye,opacity)-->opacity değerini değiştiriyor.mesele 0 iken 0.9 a getiriyor.
+.slideDown(milisaniye,fonksiyon)-->eğer element gözükmüyorsa yukarıdan aşağı(effect) gösterir.
+.slideUp(milisaniye,fonksiyon)-->eğer element gözüküyorsa yukarıdan aşağı(effect) saklar.
+.slideToggle(milisaniye,fonksiyon)-->eğer element gözükmüyorsa gösterir gözüküyorsa saklar.

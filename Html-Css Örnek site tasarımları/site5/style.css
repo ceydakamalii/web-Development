@@ -1,0 +1,50 @@
+
+body {
+    background: url(arka.jpg);
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+}
+ul li{
+    float: left;
+    width: 265px;
+    height: 40px;
+    background: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 2px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+ul li a:hover{
+    background: rgb(164, 179, 198);
+    color: black;
+}
+ul li ul li{
+    display: none;
+    font-size: 20px;
+}
+ul li:hover ul li{
+    display: block;
+}
+#home{
+    background: rgb(164, 179, 198);
+    color: black;
+}
+#home:hover{
+    background: rgb(164, 179, 198);
+    color: black;
+    
+}

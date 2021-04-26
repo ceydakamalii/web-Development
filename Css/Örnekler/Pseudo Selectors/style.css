@@ -1,0 +1,76 @@
+/*Pseudo Selectors ikiye ayrılır.*/
+/*
+  1)Pseudo Element:pseudo element bir paragrafın istediği parçasına ulaşmasını sağlar.Çift nokta kullanarak istediğimiz satıra ulaşıyoruz.word-spacing her bir kelime arasındaki boşluğu ifade eder.letter-spacing ise her harf arası boşluğu ifade eder.font-weight kelimelerin kalınlığını ifade eder.p::first-letter demek paragrafın ilk harfi demek.p::after demek her paragraftan sonra buraya content:"istediğin"; yaparsak paragrafın sonuna istediğini yazmış olursun.p::before ise paragrafın başına istediğini yazar.
+  
+*/
+p::first-line{
+    font-weight: bold;
+    color: brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+p.about::first-line{
+    background-color: green;
+}
+p::first-letter{
+    font-size: 48px;
+}
+p::after{
+    content:"";
+    display: block;
+    background-color: yellow;
+    padding: 10px;
+}
+p::before{
+    content: "selam";
+    display: block;
+    background-color: aqua;
+}
+/*
+  2)Pseudo Class:Bir kapsam içerisinden bir eleman seçmemizi sağlar bir listeden bir eleman seçme gibi.Tek nokta kullanarak istediğimiz elemana ulaşıyoruz.margin-bottom her eleman arası boşluk demek.list-style listedeki elemanların gösteriş şekli. ul li:nth-of-type(even) ise listedeki çift elemanlar even yerine odd yazsak tek sıradaki elemanlar olucak.linke basmamış hali link ,eğer önceden ziyaret edildiyese visited,fare ile linke gelirsen hover,fare ile linke tıklamaya active denir. div:hover span{} demek div üzerine geldğimizde span için değişiklik yapmaya başlıyoruz.
+*/
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul li:first-child{
+    background-color: red;
+}
+ul li:last-child{
+    background-color: red;
+}
+ul li:nth-of-type(even){
+    background-color: cadetblue;
+}
+ul li:nth-of-type(odd){
+}
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 88px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: white;
+    background-color: fuchsia;
+}
+a:active{
+    color: yellow;
+}
+span{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover span{
+    display: block;
+}

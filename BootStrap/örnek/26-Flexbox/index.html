@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Flexbox</title>
+	<style>
+        /*
+        flexbox sınıfı displayi inline yapar bunu yapma için sınıfa d-flex eklemeliyiz.Ve satırı full kaplar.
+        d-inline-flex ise yan yana yazar fakat satırı kaplamaz.
+        .flex-row Esnek öğeleri yatay olarak (yan yana) görüntülemek için kullanın . Bu varsayılandır.
+        .flex-row-reverse ise Yatay yönü sağa hizalamak için kullanılır.
+        .flex-column(birbirinin üzerine) dikey olarak esnek öğeleri görüntülemek için
+        .flex-column-reverse dikey yönünü tersine çevirmek için.
+        .justify-content Esnek öğelerin hizalamasını değiştirmek için kullanırız.Geçerli sınıflar şunlardır start(varsayılan),end,center, between veya around
+        .flex-fill ise etiketleri eşit yerlere sığdırır.
+        .flex-grow-1 sınıfı alan div geriye kalan tüm boşluğu kendisi kullanır.(alanını büyütür bu sınıf.)
+        .mr-auto(öğeleri sağa itin) kullanarak otomatik kenar boşlukları ekler.(bu sınıf eklenen ögeden sonra sağında boşluk bırakır.)
+        .ml-auto(öğeleri sola itin ) kolayca otomatik kenar boşlukları ekler.(bu sınıf eklenen ögeden sonra solunda boşluk bırakır.)
+        no-wrap elemanları tek satıra sığdırır varsayılandır bunun için sınıf eklemeye gerek yoktur.
+        .flex-wrap sınıfı sığmayan elemanı alt satıra geçirir.
+        .flex-wrap-reverse ise sığmayan elemanı ukarı yazar.
+        */
+		.box {
+			display: inline;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="container my-5">
+        <h3 class="mt-5">Flexbox Kullanılmayan Container</h3>
+        <div class="p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Flexbox Container</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Inline Flexbox Container</h3>
+		<div class="d-inline-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Horizontal Direction</h3>
+		<div class="d-flex flex-row p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex flex-row-reverse p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+
+		<h3 class="mt-5">Vertical Direction</h3>
+		<div class="d-flex flex-column p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex flex-column-reverse p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+
+		<h3 class="mt-5">Justify Content</h3>
+		<div class="d-flex justify-content-start p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex justify-content-center p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex justify-content-between p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex justify-content-around p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex justify-content-end p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+
+
+		<h3 class="mt-5">Fill / Equal Widths</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="flex-fill bg-primary p-2"> box 1 </div>
+			<div class="flex-fill bg-success p-2"> box 2 </div>
+			<div class="flex-fill bg-danger p-2"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Grow</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="flex-grow-1 bg-danger p-2"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Order</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2 order-3"> box 1 </div>
+			<div class="bg-success p-2 order-2"> box 2 </div>
+			<div class="bg-danger p-2 order-1"> box 3 </div>
+		</div>
+
+		<h3 class="mt-5">Auto Margin</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="mr-auto bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="ml-auto bg-danger p-2"> box 3 </div>
+		</div>
+		
+		<h3 class="mt-5">Wrap - no-wrap</h3>
+		<div class="d-flex p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<h3 class="mt-5">Wrap - flex-wrap</h3>
+		<div class="d-flex flex-wrap p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		<h3 class="mt-5">Wrap - flex-wrap-reverse</h3>
+		<div class="d-flex flex-wrap-reverse p-2 mt-2 bg-secondary">
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+			<div class="bg-primary p-2"> box 1 </div>
+			<div class="bg-success p-2"> box 2 </div>
+			<div class="bg-danger p-2"> box 3 </div>
+		</div>
+		
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

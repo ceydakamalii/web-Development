@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex & Margin</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            
+            display: flex;
+            /*align-items ve justify-content özellikleriyle elemanları ortaladık*/
+            //align-items: center;
+            //justify-content: center;
+            
+            
+            background-color: #f2f2f2;
+            height: 500px;
+        }
+        .item{
+            /*Margin ile eleman ortalama*/
+            //margin: auto;/*tek satırda ortalar*/
+            /*eleman sağa yapışsın istiyorsak margin-left:auto; yapmalıyız.*/
+            //margin-left: auto;
+            background-color: chocolate;
+            font-size: 25px;
+            color: #fff;
+            padding: 30px;
+          
+        }
+        .i1{
+            margin-right: auto;
+            
+        }
+        .i2{
+            margin-left: auto;
+        }
+   
+       
+    
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item i1">item 1</div>
+       <div class="item i2">item 2</div>
+       
+   </div>
+    
+</body>
+</html>

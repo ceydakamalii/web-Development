@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="tooltip.css">
+    <style>
+        /* Tooltip bir bölümde bir yazıda açıklama eklemektir.Bu açıklama sağda solda aşağıda yukarıda olabilir.
+            z-index: 1; derinliktir öndeki yazıya arkadki yazı yansımaz bu kod sayesinde
+            soldan sağa götürmek için lefti değiştircez
+            sağdan sola götürmek için righti değiştircez
+            yukarı çıkarmak için bottomu değiştircez
+            aşağı inmesi için topu değiştircez
+        */
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="tooltip">Aut<span class="text top">Tooltip Text</span>
+    </span> magnam repellendus quasi tempore placeat reiciendis. Expedita dignissimos culpa ut, iure, officia molestiae. Perferendis minus ipsum modi inventore nostrum, accusamus vero.</p>
+    <hr>
+    <br>
+    <br>
+    <span class="tooltip border">
+        Tooltip Top
+        <span class="text top">Tooltip Text</span>
+    </span>
+    <span class="tooltip border">
+        Tooltip Right
+        <span class="text right">Tooltip Text</span>
+    </span>
+
+    <span class="tooltip border">
+        Tooltip Bottom
+        <span class="text bottom">Tooltip Text</span>
+    </span>
+
+    <span class="tooltip border">
+        Tooltip Left
+        <span class="text left">Tooltip Text</span>
+    </span>
+
+
+</body>
+
+</html>

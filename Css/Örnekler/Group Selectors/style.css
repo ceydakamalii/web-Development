@@ -1,0 +1,75 @@
+/*
+
+
+   1 : (*) --> Tüm etiketler
+   2 : (p) --> Tüm p etiketleri
+   3 : (div p) --> div etiketinin içinde olan tüm paragraflar
+   4 : (div,p) --> Tüm div ve p etiketleri
+   5 : (div>p) --> Üst etiketi div olan tüm p etiketleri
+   6 : (p~div) --> p ile aynı seviyede olan div etiketleri
+   7 : (p+div) --> p etiketinden sonra gelen ilk div etiketleri
+
+Sıra sıra alta yazan komutları yap
+1)tüm etiketler
+
+*{
+    border: 1px solid blue;
+}
+
+2)tüm p ler
+
+p{
+    border: 1px solid red;
+}
+
+3)div altındaki tüm p ler
+
+div p{
+    border: 1px solid orange;
+}
+
+4)container altındaki tüm divleri seçmek için
+
+.container div{
+    border: 1px solid yellow;
+}
+
+5)Container altındaki divlerden clası box olanları seçme
+
+.container div.box{
+    border: 1px solid red;
+}
+
+6)tüm div ve p etiketleri
+
+div,p{
+    border: 1px solid red;
+}
+
+7)tüm p etiketleri ve clası box olan tüm div etiketleri
+
+div.box,p{
+    border: 1px solid red;
+}
+
+8)Üst etiketi div olan p etiketleri
+
+div>p{
+    border: 1px solid red;
+}
+
+9)p etiketinden sonra gelen tüm div etiketleri fakat p etiketinin üst etiketi div olmaması gerekiyor.
+
+p~div{
+    border: 1px solid red;
+}
+
+
+10)p etiketinden sonra gelen ilk div etiketi
+
+p+div{
+    border: 1px solid red;
+}
+
+*/
+

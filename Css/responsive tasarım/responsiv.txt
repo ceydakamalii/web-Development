@@ -1,0 +1,26 @@
+Temel olarak responsive tasarım; Tasarımın farklı ekran çözünürlüklerine göre uyum sağlamasıdır.
+Örnek olarak responsive olarak yapılmış bir web sitesinin tasarımı masaüstü bir bilgisayarda farklı görünürken ekran boyutu daha küçük olan mobil bir cihazda farklı görünecektir.
+Burada css3 ile gelen yenilikler sayesinde aynı sayfa, farklı çözünürlüklere göre yeniden şekillenmektedir.
+Gözünüzde daha iyi canlanması için web sitemizin bulunduğu tarayıcının boyutlarıyla oynayarak nasıl tepkiler verdiğini gözlemleyebilirsiniz.
+Tarayıcıyı küçülttükçe önce tabletlere daha sonra akıllı telefonlara uyumlu bir tasarımın aynı sayfada gerçekleştiğini göreceksiniz.
+
+h1{
+    font-size=	20;
+};
+
+@media screen and (max-width:800px){ // burada farklı cihazlarda telefon,tablet vs. en yüksek genişliği 800 olan cihazlarda h1 etiketinin yazı kalınlığı 16px olsun diyoruz.
+   h1{
+      font-size=16px;
+}
+}
+
+@media screen and (max-width:400px){
+   h1{
+      font-size=12px;
+}
+}
+@media screen and (min-width:1200px){
+   h1{
+      font-size=25px;
+}
+}

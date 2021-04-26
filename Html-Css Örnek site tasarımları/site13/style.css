@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    margin-top: 90px;
+    margin-left: 80px;
+}
+.kutu1{
+    width: 600px;
+    height: 400px;
+    background-color: #DBDBDB;
+    display: inline-block;
+    background-image: url(mont1.jpg);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    
+    
+}
+
+.kutu2{
+    width: 600px;
+    height: 400px;
+    background-color:#E1E1E1;
+    display: inline-block;
+    background-image: url(koton2.jpg);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    
+}
+h1{
+    margin-left: 333px;
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #3a3a3a;
+    font-weight: normal;
+}
+p{
+    margin-left: 333px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+.kalinyazi{
+    font-weight: bold;
+}
+.buton{
+    margin-left: 333px;
+    display: block;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #3a3a3a;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    width: 203px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.buton:hover{
+    background-color: white;
+    color: black;
+    width: 260px;
+}
+.buton:focus{
+    cursor: wait;
+}

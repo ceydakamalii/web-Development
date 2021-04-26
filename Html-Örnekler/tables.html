@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablolar</title>
+</head>
+
+<body>
+    Web site tablo oluşturmak için table etiketi kullanılır. Bu etiket içinde tr etiketi kullanılır.tr etiketi satırı temsil eder.tr nin içinde ise td etiketi kullanılır.td ise kolonları temsil eder.td tablonun verilerini kapsar.th ise tablonun başlığı için kullanılır.<br>
+    <table>
+        <tr>
+            <th>Kurs adı</th>
+            <th>Kurs saati</th>
+            <th>Ders adeti</th>
+        </tr>
+
+        <tr>
+            <td>Komple web geliştirme eğitimi</td>
+            <td>45</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+            <td>30</td>
+            <td>200</td>
+        </tr>
+    </table>
+
+
+    *****************************************************************************<br>
+    Tablonun kenarlıkları için border kullanılır.<br>
+
+    <table border="1">
+        <tr>
+            <th>Kurs adı</th>
+            <th>Kurs saati</th>
+            <th>Ders adeti</th>
+        </tr>
+
+        <tr>
+            <td>Komple web geliştirme eğitimi</td>
+            <td>45</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+            <td>30</td>
+            <td>200</td>
+        </tr>
+    </table>
+    *******************************************************************************<br>
+    Tablonun genişliğini değiştirmek için width kullandık.her yeri kapsaması için 100% yaptık.<br>
+    <table border="1" width="100%">
+        <tr>
+            <th>Kurs adı</th>
+            <th>Kurs saati</th>
+            <th>Ders adeti</th>
+        </tr>
+
+        <tr>
+            <td>Komple web geliştirme eğitimi</td>
+            <td>45</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+            <td>30</td>
+            <td>200</td>
+        </tr>
+    </table>
+    ******************************************************************************<br>
+    Başlık kolonu ve veri kolonu arasında bir fark olması lazım bunun için thead etiketi kullanılır.thead etiketi başlıkta kullanılır.tbody etiketi ise veri kolonunda kullanılır.<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kurs adı</th>
+                <th>Kurs saati</th>
+                <th>Ders adeti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Komple web geliştirme eğitimi</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+                <td>30</td>
+                <td>200</td>
+            </tr>
+
+        </tbody>
+    </table>
+    *********************************************************************************<br>
+    3 kolon var 3 kolonu kullanmak istemiyorsak colspan ile bir veriyi kaç kolona kaplatcağını yazarız.<br>
+     <table border="1">
+        <thead>
+            <tr>
+                <th>Kurs adı</th>
+                <th>Kurs saati</th>
+                <th>Ders adeti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Komple web geliştirme eğitimi</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+                <td>30</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td colspan="2">B1 Düzeyi İngilizce Eğitimi</td>
+                <td>200</td>
+            </tr>
+
+        </tbody>
+    </table>
+    **********************************************************************************<br>
+    colspan iki yanyana satırı birleştiriyor,rowspan ise iki alt alta satırı birleştiriyor.<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kurs adı</th>
+                <th>Kurs saati</th>
+                <th>Ders adeti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Komple web geliştirme eğitimi</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Cre 2 MVC Eğitimi:Sıfırdan İleri Seviye</td>
+                <td>30</td>
+                <td rowspan="2">200</td>
+            </tr>
+            <tr>
+                <td colspan="2">B1 Düzeyi İngilizce Eğitimi</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+    
+
+</body>
+
+</html>

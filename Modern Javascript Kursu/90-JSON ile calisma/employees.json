@@ -1,0 +1,7 @@
+{
+    "employeess":[
+        {"firstname" : "Çınar","lastname" : "Kaya","age":20,"retired" :false },
+        {"firstname" : "Sena","lastname" : "Kaya","age":19 ,"retired" :false},
+        {"firstname" : "Merve","lastname" : "Kaya","age":10 ,"retired" :false}
+    ]
+}

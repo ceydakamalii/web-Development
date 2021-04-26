@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: url(arkam.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    
+    
+ 
+}
+.kare{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    z-index: 2;
+    
+    
+
+}
+.kare h1{
+    color: black;
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid rgb(253, 140, 120);
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    
+}
+.textbox{
+ 
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border-bottom: 2px solid rgb(253, 140, 120);
+   
+}
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+   
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0px 10px;
+   
+}
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid rgb(253, 140, 120);
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0px;
+    font-size: 18px;
+    transition: all 0.55s;
+    
+}
+.btn:hover{
+    border: 3px solid black;
+    color: rgb(253, 140, 120);
+    
+}
+.btn:focus{
+    cursor: progress;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}

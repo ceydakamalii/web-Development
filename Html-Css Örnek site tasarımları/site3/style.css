@@ -1,0 +1,193 @@
+/* font-family: 'Lato', sans-serif;*/
+/* 
+*******justify-content****
+Flex özelliğine sahip olan bir kapsayıcının yatay eksende nasıl hizalanacağını ayarlar. Objeler başta mı, ortada mı, sonda mı, aralıklı mı dizileceğine karar vermemizi sağlar. Bu kararı vermek için 5 parametre kullanır:
+
+flex-start: Nesneler kapsayıcının başından başlayarak dizilirler.
+space-around: Nesneler arasında eşit boşluklar bırakılır.
+space-between: İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler.
+center: Nesneler tam ortalı olacak şekilde hizalanır.
+flex-end: Son nesne en sağa yaslanacak şekilde hizalanır.
+align-items
+*/
+
+/*
+*******align-items******
+Bu özellik ise justify-content‘in yatay eksende yaptığı şeyleri dikey eksende yapmaya yarar. Yine aynı şekilde hizalama işlemini dikey eksende nasıl yapmamız gerektiğine karar vermemiz gerekmektedir. Bu özellik de yine 5 parametre kullanır ve bunlardan 3 tanesi justify-content özelliği ile aynıdır.
+
+flex-start: Nesneler, kapsayıcının en üstünden başlayarak dizilirler.
+flex-end: Nesneler, kapsayıcının en altından başlayarak, yukarı doğru dizilirler.
+center: Nesneler ortalı bir şekilde dikey olarak sıralanırlar.
+baseline: İlk satırdaki yazı tipi göz önüne alınarak hizalanmaya başlanılır.
+stretch: Tüm nesneler kapsayıcı yüksekliğine eşit olacak şekilde dizilirler.
+
+*/
+body {
+    font-family: 'Lato', sans-serif;
+    background: url(1080.jpg);
+    height: 100%;
+    font-size: 13px;
+
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    color: #909090;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    -ms-flex-align:center;
+    justify-content: center;
+    height: 100%;
+}
+.home{
+    width: 50%;
+    height: 500px;
+    background: #fff;
+}
+.photo{
+    position: relative;
+    background: url(img1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 500px;
+    display: inline-block;
+    float: left;
+}
+.desc{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;    
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background:radial-gradient(circle, rgba(101,126,252,1) 0%, rgba(230,140,159,1) 100%);
+    background:-webkit- radial-gradient(circle, rgba(101,126,252,1) 0%, rgba(230,140,159,1) 100%);
+    background:-moz- radial-gradient(circle, rgba(101,126,252,1) 0%, rgba(230,140,159,1) 100%);
+}
+.cdesc{
+    padding: 5px;
+}
+.content{
+    width: calc(100% - 250px);
+    position: relative;
+    float: left;
+}
+.menu{
+    background: #f6f6f6;
+    border-bottom: 3px solid rgb(211, 138, 172);;
+    
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    
+}
+ul li{
+    display: inline-block;
+    line-height: 2.5;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    
+}
+li:hover{
+    background: rgb(211, 138, 172);
+    
+}
+li:hover>a{
+    color: black;
+}
+.text{
+    color: #757575;
+    font-style: italic;
+    display: inline-block;
+}
+.cpadding{
+    padding: 10px;
+}
+.signature{
+    background: url(imza1.jpeg);
+    margin: auto 10px -35px auto;
+    width: 120px;
+    height: 54px;
+    background-size: cover;
+}
+.clear{
+    clear: both;
+}
+.box{
+    background: #f6f6f6;
+    border-radius: 4px;
+    border-left: 5px solid rgb(211, 138, 172);
+    padding: 5px;
+}
+.buttons{
+    margin: 10px;
+}
+.buttons a{
+    display: inline-block;
+    float: left;
+    line-height: 2.9;
+    
+}
+.buttons a:hover{
+    color: black;
+    
+}
+.button{
+    border-radius: 4px;
+    border: 2px solid rgb(211, 138, 172);
+    padding: 5px 10px;
+    margin: 3px;
+}
+.button:hover{
+    background: rgb(182, 134, 193);
+}
+.sbox{
+    display: inline-block;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.social{
+    text-align: right;
+    font-size: 16px;
+   
+}
+.social a{
+    padding: 5px;
+    width: 15px;
+    height: 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all 0.2s;
+}
+.social a:hover{
+    border: 2px solid rgb(211, 138, 172);
+    color: black;
+    background: rgb(182, 134, 193);
+    
+}
+.row{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    font-style: normal;
+    line-height: 2.3;
+}
+.info1{
+    display: inline-block;
+}
+.info2{
+
+    font-weight: bold;
+}

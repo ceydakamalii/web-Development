@@ -1,0 +1,131 @@
+/*font-family: 'Roboto', sans-serif;*/
+body{
+    background: url(arkaplan.jpg);
+    height: 100%;
+    font-family:'Roboto', sans-serif;
+    background-size:cover;
+    background-attachment: fixed;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    
+}
+html{
+    height: 100%;
+}
+.menu{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /*position: fixed;*/
+    height: 126px;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    float: left;
+}
+.logo{
+    background: url(kar.png);
+    width: 126px;
+    height:126px;
+    background-size:cover;
+    margin-left: 40px;
+    float: left;
+    display: inline-block;
+    position: relative;
+   
+}
+.clear{
+    clear: both;
+}
+.menu-ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+.menu-ul ul{
+    font-weight:900;
+   
+    
+}
+.menu-ul li{
+    display: inline-block;
+    list-style-type: none;
+     
+  
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: all .4s;
+    font-weight:900;
+    line-height: 110px;
+    
+}
+a:hover{
+    background: red;
+    border-radius: 2px;
+    color: black;
+   
+}
+.home{
+    border: 1px solid red;
+    background-color: red;
+    color: #FFF;
+    border-radius: 2px;
+}
+.home:hover{
+    color: #FFF;
+}
+.text{
+    margin-left: 220px;
+    z-index: 2;
+}
+.text h1{
+    color: white;
+    font-size: 70px;
+    width: 900px;
+    font-weight: bold;
+    text-align: center;
+}
+.text h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 885px;
+    text-align: center;
+}
+.buttons{
+
+    margin: 35px 500px;
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    background: red;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #cc0000;
+    border-radius: 25px;
+    transition:all .6s;
+}
+.bir{
+    margin-right: 20px;
+}
+.buttons button:hover{
+    color: black;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    width: 180px;
+}
+

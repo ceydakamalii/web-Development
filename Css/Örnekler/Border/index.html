@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Border(Kenarlık)</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+
+            width: 120px;
+            height: 120px;
+            background: gray;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        #first {
+            border: 1px solid red;
+        }
+
+        #second {
+            border-top-style: solid;
+            border-right-style: dashed;
+            border-bottom-style: groove;
+            border-left-style: double;
+            border-color: blue;
+            border-top-width: 5px;
+            border-right-width: 3px;
+            border-bottom-width: 2px;
+            border-left-width: 1px;
+        }
+
+        #third {
+            border: 10px solid green;
+            border-radius: 50%;
+        }
+
+        #msgbox {
+            background: gray;
+            margin: 10px;
+            padding: 20px;
+            border-left: 1px solid green;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    border kenarlıktır 3 değişken alır.border:kalınlık solid renk;<br>
+    border-width,border-style,border-color olarakta ayrı ayrı satırda yapabiliriz.<br>
+    kenarlıkların değeri farklı olabilir border-top-width,border-top-color gibi<br>
+    border-radius: demek kenarlıkları biraz daha yuvarlak yapma demektir.<br>
+    tamamen yuvarlak olmasını istiyorsak border-radius:50%; yaparız<br>
+
+
+    <div class="box" id="first">box1</div>
+    <div class="box" id="second">box2</div>
+    <div class="box" id="third">box3</div>
+    <div style="clear: both"></div>
+    <div id="msgbox">Message Box</div>
+
+
+
+</body>
+
+</html>

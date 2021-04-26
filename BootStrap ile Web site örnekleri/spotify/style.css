@@ -1,0 +1,57 @@
+body{
+    
+    font-family: 'Open Sans', sans-serif !important;
+    margin-top: -72px !important;
+}
+.bg-yellow{
+    background-color: #f7c04e !important;
+}
+
+.py-6{
+    padding: 150px 0px;
+}
+.pt-6{
+    padding-top: 200px;
+}
+.margin-bottom{
+    margin-bottom: 72px;
+}
+.bg-soft-black{
+    background-color: #00000099;
+}
+.gradient{
+    background: linear-gradient(#ed6670,#f2ad4e);
+}
+.btn-success{
+    background-color: #1db954 !important;
+    border-radius: 50px !important;
+}
+.btn-outline-secondary{
+    border-radius: 50px !important;
+}
+.black{
+    color: black !important;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.green-color{
+    color: #1db954 !important;
+}
+.boyut{
+    display: block !important;
+}
+.shadow{
+    box-shadow: 0px 2px 5px #999 !important;
+}
+.arkasiyah{
+    background-color: black !important;
+}
+@media (max-width:992px) {
+    .display-3{
+        font-size: 35px !important;
+    }
+}

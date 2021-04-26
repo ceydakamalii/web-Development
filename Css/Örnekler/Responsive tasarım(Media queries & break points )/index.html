@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Tasarım</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body{
+            background-color: blue;
+        }
+        h1{/*<meta name="viewport" content="width=device-width"> burada @media screen leri kullanmak için bunu yazıyoruz.*/
+            font-size: 20px;
+        }
+        @media screen and (max-width:700px){
+            h1{
+                font-size: 16px;
+               
+            }
+            body{
+                 background-color: red;
+            }
+        }
+         @media screen and (max-width:400px){
+            h1{
+               
+                font-size: 12px;
+            }
+             body{
+                  background-color: yellow;
+             }
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Komple Uygulamalı Web Geliştirme Eğitimi</h1>
+</body>
+</html>

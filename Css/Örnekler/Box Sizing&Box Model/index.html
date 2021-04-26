@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Sizing & Box Model</title>
+    <style>
+        #box1{
+            box-sizing: content-box;
+            width: 300px;
+            height: 100px;
+            background: green;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 10px solid black;
+        }
+        #box2{
+            box-sizing: border-box;
+            width: 300px;
+            height: 100px;
+            background: gold;
+            padding: 10px;
+            border: 10px solid black;
+        }
+    
+    </style>
+</head>
+<body>
+   box-sizing ikiye ayrılır content-box ve border-box<br>
+   varsayılan olarak content-box olarak hesaplanır.<br>
+   content-box, bir nesnenin yüksekliği ve genişliğinin toplamına padding,border,margin değerlerinin toplamıda eklenmesiyle bulunur.<br>
+   border-boxta bir nesnenin yüksekliği ve genişliğinin toplamına margin eklenerek bulunur.<br>
+   300 genişliği varmış biz buna padding:10px; yazarsak sağdan soldan 10 px artış yukardan aşagıya 10 px artış olcak yeni genişlik ise 300+10*2=320 olur.yükseklik 100px imiş padding ekleyince 100+10*2=120px olucak,border ekleyincede aynı işlev oluyor.<br>
+   eğer box-sizing=border-box; ise genişliğin ve yüksekliğin içinde zaten padding ve border vardır o yüzden genişliğe ve yüksekliğe bu değerler eklenmez sadece margin değerde değişiklik varsa o eklenir.<br>
+   
+    <div id="box1">
+        300px + (10*2) + (10*2) --> 340px
+    </div>
+    <div id="box2">
+        260px + (10*2) + (10*2) --> 300px genişliğin içinde padding ve border zaten vardır.
+        300px --> 300px
+    </div> 
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html {
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 140px;
+    /*line heighte değeriyle height değeri aynı olursa tam ortaya yazar*/
+    z-index: 2;
+}
+
+nav a {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 12px;
+
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+
+
+.gorsel {
+    height: 100%;
+    background-color: lightblue;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bant {
+    height: 100%;
+    background-color: lightgreen;
+}
+
+#gor1 {
+    background-image: url(img/resim1.jpg);
+}
+#bant1 i{
+    display: inline-block;
+    font-size: 26px;
+    height: 50px;
+    border-radius: 100px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    color: #fff;
+    background-color: #bbb;
+
+}
+#bant1 fa{
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#gor2 {
+    background-image: url(img/resim2.jpg);
+}
+
+#gor3 {
+    background-image: url(img/resim3.jpg);
+}
+
+.anasayfa {
+    position: absolute;
+    float: left;
+}
+
+.anayazi {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.anayazi h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 80px;
+    color: orange;
+}
+
+.anayazi p {
+    color: #FFF;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 19px;
+}
+
+.anayazi span {
+    color: #FFF;
+    padding: 10px;
+    font-size: 19px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.anayazi span:hover {
+    color: orange;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.anafiltre {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.34;
+    z-index: 0;
+}

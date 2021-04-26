@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css Display</title>
+    <style>
+        div {
+            display: inline-block;
+            height: 200px;
+            background: red;
+            margin: 10px;
+        }
+
+        #first {
+            width: 500px;
+        }
+        span{
+            background: blue;
+            width: 200px;
+            height: 100px;
+            display:inline-block;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    margin:istenilen; sağdan soldan köşelerden istenilen boşluğu bırakır.<br>
+    background:renk; ise bir kutu oluşturur.<br>
+    Display: none,inline,block,inline-block; olabilir.<br>
+    Display:none; o değişkeni kaldırır,yok eder.<br>
+    div etiketi varsayılan olarak block etiketidir.<br>
+    span etiketi varsayılan olarak inline etiketidir.<br>
+    a etiketi varsayılan olarak inline etiketidir.<br>
+    inline etiketlere genişlik ve yükseklik veremeyiz.<br>
+    block etiketlere genişlik ve yükseklik verebiliriz.<br>
+    inline etiketlrin genişlik ve yüksekliğini değiştirmek için displayini değiştiricez örneğin inline den blocka getiricez.<br>
+    display:inline-block; o değeri hem yan yana yazıyor ama block etiketi olup tüm satırı kaplıyor,genişlik ve yükseklikte değiştirilebiliyor.<br>
+    <div id="first">first</div>
+    <div id="second">second</div>
+    <span>Deneme 1</span>
+    <span>Deneme 2</span>
+    <span>Deneme 3</span>
+    <br>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+</body>
+
+</html>

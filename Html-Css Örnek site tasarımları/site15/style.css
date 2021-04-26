@@ -1,0 +1,252 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #232323;;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+
+}
+.header{
+    width: 800px;
+    height: 80px;
+    background-color:#c0392b;
+    margin-bottom: 10px;
+}
+.logo{
+    float: left;
+    margin-top: 13px;
+    margin-left: 30px;
+    
+}
+.logo img{
+    width: 230px;
+    height: 67px;
+}
+.menu{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.menu li{
+    float: left;
+    list-style-type: none;
+  
+}
+.menu li a{
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.sol{
+    position: absolute;
+    left: 0;
+    float: left;
+    height: 400px;
+    width: 200px;
+  
+   
+}
+.profil{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.profil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.bilgi{
+    width: 200px;
+    text-align: center;
+    color: #353535;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sosyal{
+    width: 180px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.sosyal img{
+    width: 25px;
+    height: 25px;
+}
+.cv{
+    width: 125px;
+    height: 45px;
+    background-color: #232323;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-radius: 9px;
+}
+.cv:hover{
+    opacity: 0.8;
+    background-color: dimgray;
+    border-radius: 0px;
+    
+    
+}
+.cv:hover .cv-yazi{
+    color: #232323;
+}
+.cv-yazi{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.sag{
+    float: right;
+    height: 400px;
+    width: 500px;
+    margin-top: 0px;
+}
+.baslik{
+    width: 450px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.alan{
+    float: left;
+    width: 450px;
+}
+.alan p{
+    color: #232323;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.kutu{
+    width: 450px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 10px;
+    position: relative;
+}
+.limit1{
+    width: 96%;
+    height:30px;
+    background-color: #c0392b;
+    position: absolute;
+}
+.limit2{
+    width: 88%;
+    height:30px;
+    background-color: #2980b9;
+    position: absolute;
+}
+.limit3{
+    width: 55%;
+    height:30px;
+    background-color: #232323;
+    position: absolute;
+}
+.limit4{
+    width: 30%;
+    height:30px;
+    background-color: #f39c12;
+    position: absolute;
+}
+.ickutu{
+    width: 90px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 10px 0px 10px ;
+    text-align: center;
+}
+.i-sag{
+    width: 700px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+.i-baslik{
+    width: 700px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin: 0 auto;
+   margin-top: 15px;
+}
+.i-kutu{
+    width: 700px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 10px;
+    position: relative;
+}
+.i-alan p{
+    color: #232323;
+}
+.i-limit1{
+     width: 96%;
+    height:30px;
+    background-color: #c0392b;
+    position: absolute;
+}
+.i-limit2{
+    width: 88%;
+    height:30px;
+    background-color: #2980b9;
+    position: absolute;
+}
+.i-limit3{
+    width: 55%;
+    height:30px;
+    background-color: #232323;
+    position: absolute;
+}
+.i-limit4{
+    width: 30%;
+    height:30px;
+    background-color: #f39c12;
+    position: absolute;
+}
+.i-ickutu{
+    font-size: 16px;
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 10px 0px 10px ;
+    text-align: center;
+}
+.ad{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+}
+.iletisim{
+    margin-top: 10px;
+}
+.mesaj{
+    width: 700px;
+    height: 80px;
+}
+.buton{
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+}

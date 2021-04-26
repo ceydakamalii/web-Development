@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formlar</title>
+</head>
+
+<body>
+    Formlar bilgilerimizi kapsar.Formlarda form etiketi kullanılır.<br>
+    input değer girme işlemidir.<br>
+    type=text yazarsak bir değişiklik olmaz<br>
+    type=checkbox küçük kutu içinde işaretlemeli alan oluşturur.<br>
+    <form>
+        <p>
+            AD <input type="text">
+        </p>
+        <p>
+            SOYAD <input type="text">
+        </p>
+        <p>
+            Beni Hatırla <input type="checkbox">
+        </p>
+        <p>
+            Erkek <input type="radio">
+            Kadın <input type="radio">
+        </p>
+        <br>Cinsiyetin ikiside seçiliyor bunu engellemek için name ifadesi kullancaz.<br>
+        <p>
+            Erkek <input type="radio" name="Cinsiyet">
+            Kadın <input type="radio" name="Cinsiyet">
+
+        </p>
+        <p>
+            <strong>Hobiler</strong>
+            <br>
+            Sinema<input type="checkbox">
+            Yüzme<input type="checkbox">
+            Kitap okuma<input type="checkbox">
+            Resim yapma<input type="checkbox">
+        </p>
+        <p>
+            <select>
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+        <br>Birden fazla seçim yapmak için selectlerde multiple ekleriz<br>
+        <p>
+            <select multiple>
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+
+
+    </form>
+    <br>Formun nereye göndereceğini belirmek için form etiketinin yanına action etribütünü yazarız.Form etiketini kapanmadan hemen önce ise input ile typesini ve valuesini alırız.<br>
+    <form action="/Home/Register">
+        <p>
+            AD <input type="text" name="ad">
+        </p>
+        <p>
+            SOYAD <input type="text" name="soyad">
+        </p>
+        <p>
+            Beni Hatırla <input type="checkbox" name="benihatırla">
+        </p>
+        <p>
+            Erkek <input type="radio">
+            Kadın <input type="radio">
+        </p>
+        <br>Cinsiyetin ikiside seçiliyor bunu engellemek için name ifadesi kullancaz.<br>
+        <p>
+            Erkek <input type="radio" name="Cinsiyet">
+            Kadın <input type="radio" name="Cinsiyet">
+
+        </p>
+        <p>
+            <strong>Hobiler</strong>
+            <br>
+            Sinema<input type="checkbox" name="hobi">
+            Yüzme<input type="checkbox" name="hobi">
+            Kitap okuma<input type="checkbox" name="hobi">
+            Resim yapma<input type="checkbox" name="hobi">
+        </p>
+        <p>
+            <select name="şehirler">
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+        <br>Birden fazla seçim yapmak için selectlerde multiple ekleriz<br>
+        <p>
+            <select multiple name="şehirler">
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+        <input type="submit" value="Kaydet">
+    </form>
+    <br>Hangi kontrolün yerine hangi şeyin yazıldığını server kodu anlaması için name kullanmak gerekiyor.<br>
+    <form action="/Home/Register">
+        <p>
+            AD <input type="text" name="ad" placeholder="adınızı giriniz" required>
+        </p>
+        <p>
+            SOYAD <input type="text" name="soyad" placeholder="soyadınızı giriniz" required>
+        </p>
+        <p>
+            E-posta <input type="email" name="email" placeholder="e-posta adresinizi giriniz" required>
+        </p>
+        <p>
+            Beni Hatırla <input type="checkbox">
+        </p>
+        <p>
+            Erkek <input type="radio">
+            Kadın <input type="radio">
+        </p>
+        <br>Cinsiyetin ikiside seçiliyor bunu engellemek için name ifadesi kullancaz.<br>
+        <p>
+            Erkek <input type="radio" name="Cinsiyet">
+            Kadın <input type="radio" name="Cinsiyet">
+
+        </p>
+        <p>
+            <strong>Hobiler</strong>
+            <br>
+            Sinema<input type="checkbox" name="hobi">
+            Yüzme<input type="checkbox" name="hobi">
+            Kitap okuma<input type="checkbox" name="hobi">
+            Resim yapma<input type="checkbox" name="hobi">
+        </p>
+        <p>
+            <select name="şehirler">
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+        <br>Birden fazla seçim yapmak için selectlerde multiple ekleriz<br>
+        <p>
+            <select multiple name="şehiler">
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
+                <option>Bilecik</option>
+                <option>Çanakkale</option>
+                <option>Bursa</option>
+                <option>Balıkesir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+
+            </select>
+        </p>
+        <input type="submit" value="Kaydet">
+    </form>
+
+
+
+</body>
+
+</html>

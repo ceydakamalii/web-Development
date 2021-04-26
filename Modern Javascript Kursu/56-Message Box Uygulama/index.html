@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #message-box{
+            background-color:grey;
+            text-align:center;
+            color:white;
+            width:80%;
+            margin-top:20px;
+        }
+        #message-header{
+            cursor:pointer;
+            height:40px;
+            padding:10px;
+            border-bottom:1px solid #fff;
+        }
+        #content{
+            height:200px;
+            padding:10px;
+            display:none;
+        }
+        #close{
+            float:right;
+            font-size:20px;
+        }
+        #close:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-box">
+        <div id="message-header">
+            <span id="close">X</span>
+            Mesajınız Var
+        </div>
+        <div id="content">Hello , My friend.</div>
+    
+    
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#message-header").click(function(){
+                $("#content").toggle("slow");
+            });
+            $("#close").click(function(){
+                $("#message-box").hide("slow",function(){
+                    alert("İşlem sonlandı.");
+                });
+            });
+        });
+    
+    
+    
+    </script>
+</body>
+</html>

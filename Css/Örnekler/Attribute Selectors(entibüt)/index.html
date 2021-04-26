@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    içerikle kutu arasındaki mesafeyi padding ile ayarlıyoruz.<br>
+    style.css içinde p[title="second"]yazarsak başlığı second olan paragrafı değiştiririz.<br>
+    style.css içinde p[title="forth"] yazarsak başlığı forth olan paragraf olmadığından değişmez fakat p[title="forth paragraph"]yazarsak değişiklik olur.<br>
+    style.css içinde p[title~="forth"] yazarsak başlığında forth geçen paragrafı değiştirir.<br>
+    style.css içinde a[href$="com"] demek a etiketin içinde com ile biten linki değiştirir.<br>
+    style.css içinde a[href^="http"] demek a etiketinin içinde http ile başlayan link yani iki linkte değişir.<br>
+    style.css içinde a[href^="https"]demek a etiketinin içinde https ile başlayan linki değiştirir.<br>
+    display:block; demek blok etiketi yapmak demektir alt alta fakar display:inline block desek bir satırı yan yana kaplamaları demektir.<br>
+
+    <h1>Attribute Selectors</h1>
+    <p>this is a paragraph without the title attribute(bu, başlık attributesi olmayan bir paragraftır)</p>
+    <p title="second">
+        p[title] selects all paragraphs containing a title attribute<br>
+        p [başlık], bir başlık attribütü içeren tüm paragrafları seçer
+    </p>
+    <p title="third paragraph">
+        p[title~="paragraph"] selects all paragraphs with a title attribute containing the word,paragraph.<br>
+        p [başlık ~ = "paragraf"] kelimesini, paragrafı içeren bir başlık attributune sahip tüm paragrafları seçer.
+
+    </p>
+    <p title="forth paragraph">
+        p[title="#4 paragraph"] selects all paragraphs with a title atribute containing the exact text,#4 paragraph Matches are case-sensitive and must match letter-for-letter including whitespace.<br>
+        p [title = "# 4 paragraph"], tam metni içeren bir başlığa sahip tüm paragrafları seçer, # 4 paragraf Eşleşmeleri büyük / küçük harfe duyarlıdır ve boşluk dahil olmak üzere harf için harfle eşleşmelidir.
+
+    </p>
+    <p>
+        <a href="https://example.net/" target="_blank">example 1</a>
+        <a href="http://example.com/" target="_blank">example 2</a>
+    </p>
+    <p>
+        <input type="text" name="Name">
+        <input type="button" value="button">
+    </p>
+
+
+</body>
+
+</html>

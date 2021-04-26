@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Shadow -- Gölgelendirme</title>
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border-radius: 3px;
+            margin: 20px;
+            display: inline-block;
+
+        }
+
+        .card-1 {
+            -webkit- box-shadow: 10px 10px;
+            -moz- box-shadow: 10px 10px;
+            box-shadow: 10px 10px;
+        }
+
+        .card-2 {
+            -webkit- box-shadow: 10px 10px 10px;
+            -moz- box-shadow: 10px 10px 10px;
+            box-shadow: 10px 10px 10px;
+        }
+
+        .card-3 {
+            -webkit- box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            -moz- box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .4);
+        }
+
+        .card-4 {}
+
+        .card-4:hover {
+            -webkit- box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            -moz- box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .4);
+        }
+
+        .card-5 {
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.16),0px 3px 6px rgba(0,0,0,0.30);
+        }
+        .card-6{
+            border: 1px solid #BFBFBF;
+            box-shadow: 10px 10px 5px #aaaaaa;
+        }
+
+    </style>
+</head>
+
+<body>
+    --> box-shadow: 10px 20px; demek gölgelendirmede 10px aşağıda(bottom) olucak soldan sağa gidicek,20px sağda olucak yukarıdan aşağıya gidicek
+    gölgelendirme yani ikinciyi 20px i değiştirirsek gölgelendirme aşağıya gidicek,birinciyi değiştirsek gölgelendirme soldan sağa gidicek<br>
+    --> box-shadow: 10px 10px 10px; demek gölgelendirmenin daha silik olmasını sağlar.<br>
+    --> box-shadow: 10px 10px 10px 10px; demek gölgelendirmenin genişlediğini gösterir.<br>
+    --> bu gölgelendirmenin rengini değiştirebiliriz box-shadow: 10px 10px 10px 10px rgba(0,0,0,.4); mesela veya direk rengi yazarsakta olur.<br>
+    --> shadow kullanırken mozillede chromede vs değişikliği algılaması için farklı şekilde kullamak zorundayız.<br>
+    <div class="card card-1"></div>
+    <div class="card card-2"></div>
+    <div class="card card-3"></div>
+    <div class="card card-4"></div>
+    <div class="card card-5"></div>
+    <div class="card card-6"></div>
+
+</body>
+
+</html>

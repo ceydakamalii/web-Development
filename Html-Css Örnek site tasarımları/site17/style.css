@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    /*Genişliğimizin border,padding eklendiğinde değişmesini engelliyor.*/
+}
+
+@media screen and (max-width:1284px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        //background-color: #dbdbdb;
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    .bas {
+        width: 100%;
+        height: 90px;
+        background-color: #ed6761;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid #ed6761;
+        position: relative;
+        z-index: 1;
+    }
+
+    .bas2 {
+
+        width: 100%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        margin-top: 1px;
+        margin-left: 20px;
+        display: inline-block;
+        width: 45%;
+        height: 90px;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        margin-top: 35px;
+        width: 50%;
+    }
+
+    .menu ul li {
+        list-style-type: none;
+        float: left;
+        margin-right: 28px;
+        margin-left: 30px;
+
+
+    }
+
+    .menu a {
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: #f29d9b;
+        transition: all 0.2s;
+        font-weight: bold;
+
+    }
+
+    .ilk a {
+        color: #fff;
+    }
+
+    .menu a:hover {
+        color: #fff;
+        border-bottom: none;
+        text-decoration: none;
+
+    }
+
+    .resim {
+        margin-top: 10px;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    .imgbir {
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    #banner {
+        height: 460px;
+        margin-left: 110px;
+        margin-right: 110px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    #bannerLeft {
+        position: absolute;
+        width: 390px;
+        height: 270px;
+        top: 44px;
+        left: 64px;
+    }
+
+    #bannerRight {
+        width: 500px;
+        height: 420px;
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+
+    }
+
+    #bannerLeft h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 33px;
+        font-weight: 600;
+        color: black;
+
+    }
+
+    #bannerLeft h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        margin-top: 50px;
+    }
+
+    #bannerRight img {
+        transform: scale(1);
+        /*değişen şey hoverde boyut olcak scale ile bunu büyüt diyoruz 1 oranında*/
+        /*transform: translateX(0,0);/*yatayda kaydırma*/
+        transition: all 0.3s;
+        position: relative;
+        left: 50px;
+
+    }
+
+    #bannerRight img:hover {
+        transform: scale(1.07);
+        left: -60px;
+
+    }
+
+
+    .galResim {
+        width: 30%;
+        height: 200px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        /*gölgelendirmede yatay gölge 0,dikey gölge 2px verdik bulanıklık 8 px,bulanıklıgı dağıtmaya 2px verdik ve gölgelendirme rengi rgba(20,23,28,0.15) verdik*/
+        margin: 10px;
+        transition: all 0.6s;
+        object-fit: cover;
+        /*resimin oranını korumayı sağlıyor*/
+
+    }
+
+    .galResim:hover {
+
+        border: 5px solid white;
+        cursor: pointer;
+    }
+
+    .sec {
+        background-color: #ed6761;
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        height: 685px;
+        margin-left: 110px;
+        margin-right: 110px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #ed6761;
+    }
+
+    #gallery {
+        width: 1000px;
+        margin: 20px auto;
+    }
+
+    .item-container {
+        width: 22%;
+        float: left;
+        padding: 10px;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .gallery-item {
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        /*gölgelendirmede yatay gölge 0,dikey gölge 2px verdik bulanıklık 8 px,bulanıklıgı dağıtmaya 2px verdik ve gölgelendirme rengi rgba(20,23,28,0.15) verdik*/
+        transition: all 0.6s;
+        border: 1px solid white;
+    }
+
+    .gallery-item:hover {
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+    }
+
+    .description {
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .adres {
+        margin-left: 110px;
+        margin-right: 110px;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 560px;
+        border: 1px solid black;
+    }
+
+    iframe {
+        border-radius: 10px;
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        margin-left: 60px;
+    }
+
+    .footer {
+        background-color: #ed6761;
+        height: 80px;
+        margin-top: 10px;
+
+    }
+
+    .text {
+        float: left;
+        width: 60%;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 55px;
+        line-height: 80px;
+        font-size: 20px;
+        color: black;
+
+
+    }
+
+    .ikon {
+        margin-left: 100px;
+        float: right;
+        width: 25%;
+        height: 80px;
+        font-size: 18px;
+        color: black;
+
+    }
+
+    .ikon i {
+        margin-right: 15px;
+        font-size: 25px;
+        line-height: 80px;
+        color: black;
+    }
+
+    .ikon i:hover {
+        opacity: 0.8;
+
+    }
+
+    /*MENU*/
+    section {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        overflow: auto;
+        /*içerisinde bulunan etiketleri sectiona sığdırmak için bunu yazıyoruz.*/
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .nav {
+        width: 20%;
+        float: left;
+        //margin-top: 10px;
+        height: auto;
+    }
+
+    .nav ul {
+        width: auto;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #b4b4b4;
+        border-radius: 10px;
+        opacity: 0.8;
+
+    }
+
+    .nav ul li {
+        list-style-type: none;
+
+    }
+
+    .nav ul li a {
+        opacity: 1;
+        text-decoration: none;
+        height: 50px;
+        line-height: 50px;
+        /*satır yüksekliğini ve yüksekliği aynı vermek satırda yukardan aşağıdan ortalamamızı sağlar*/
+        color: black;
+        font-size: 17px;
+        border-bottom: 1px solid #b4b4b4;
+        padding-left: 20px;
+        display: block;
+        transition: all 0.4s;
+    }
+
+    .nav ul li a:hover {
+        text-decoration: none;
+        background-color: #adadad;
+        color: black;
+    }
+
+    .menum {
+
+        float: left;
+        height: auto;
+        width: 80%;
+        /*Menuye yani nava yüzde 20 verdik o zaman maine yüzde 80 kalır.*/
+        padding: 10px;
+
+    }
+
+    .menum h1 {
+        border: 1px solid #b4b4b4;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+        /*gölgelendirmede yatay gölge 0,dikey gölge 2px verdik bulanıklık 8 px,bulanıklıgı dağıtmaya 2px verdik ve gölgelendirme rengi rgba(20,23,28,0.15) verdik*/
+    }
+}
+
+

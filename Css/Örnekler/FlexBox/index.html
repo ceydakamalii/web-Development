@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;/*varsayılan row özelliği*/
+            //flex-direction: row-reverse;/*Burada divleri yazı yönü tersi ile yazar.Sağdan başlar ilk yazılan en sağdadır.*/
+            //flex-direction: row;  /*Burada divleri yazı yönüyle aynı yönde soldan sağa yazar.*/
+            //flex-direction: column;/*Divler yukarıdan aşağıya doğru yazılır.*/
+            //flex-direction: column-reverse;/*Divler aiağıdan yukarıya doğru yazılır.*/
+            //flex-wrap: nowrap;/*Hiçbir eleman alta inmez genişletme daraltma sonucu*/
+            flex-wrap: wrap;/*satırlara bölünür siğmayan eleman alt satıra geçer.*/
+            //flex-wrap: wrap-reverse;/*satırlara bölünür siğmayan eleman üst satıra geçer.*/
+            background-color: #f2f2f2;
+            padding: 15px;
+            
+        }
+        .item{
+            padding: 30px;
+            background-color: chocolate;
+            margin: 30px;
+            color: #fff;
+            font-size: 25px;
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item">item 1</div>
+       <div class="item">item 2</div>
+       <div class="item">item 3</div>
+       <div class="item">item 4</div>
+       <div class="item">item 5</div>
+       <div class="item">item 6</div>
+       <div class="item">item 7</div>
+       <div class="item">item 8</div>
+       <div class="item">item 9</div>
+   </div>
+    
+</body>
+</html>

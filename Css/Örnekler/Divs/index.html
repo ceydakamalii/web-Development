@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divs</title>
+    <style>
+        #section-one{
+            color: blue;
+            background-color: brown;
+            width: 70%;
+            height: 100px;
+            overflow: auto;
+            
+        }
+        #section-two{
+            color: purple;
+            background-color: coral;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+   Sayfa tasarımımızda bir bölme oluşturmak istediğimizde div kullanırız.<br>Bu bölmede oluşturulan yerlerde ortak değişiklikler yapabiliriz.<br>
+   Divde yükseklik ve genişlik orantılı bir şekilde eleman ekledikçe artar fakat yüksekliği sabit bir değer alıp eleman eklersem taşma meydana gelir bu taşmaya overflow denir.Bu olayı engellemek için ise hangi bölme taştıysa o bölmede css kodunu yazarken overflow: yapmalıyız.<br>
+   overflow:hidden; yaparsak taşan kısımdaki paragraflar görünmez hale getirilir.<br>
+   overflow:scroll; yaparsak o bölmeyi bir tabloya alır örnekte bunu kullandık.(taşma olsada olmasada tabloya alır)<br>
+   overflow:auto; yaparsak o bölmeyi bir tabloya alır.(Taşma olursa bu işlemi yapar.)<br>
+   
+   <h1>Komple Web Gelişim</h1>
+   <div id="section-one">
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+   </div>
+   <div id="section-two">
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+   </div>
+    
+</body>
+</html>

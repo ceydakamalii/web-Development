@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margin</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+           
+            margin-right: 25px;
+        }
+
+        #first {
+            background: red;
+            margin-top: 50px;
+            
+        }
+
+        #second {
+            background: blue;
+            margin-top: 100px;
+            margin: auto;
+            
+        }
+
+        #third {
+            background: green;
+            margin-top: 150px;
+        }
+        span{
+            background: red;
+            margin: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    Margin boşluk demektir biz margin değeri girmesekte varsayılan olarak body'nin değeri vardır.Margin 4 e ayrılır margin-top,margin-bottom,margin-left,margin-right olmak üzere fakat biz direk margin diyip değer girersek bu 4 değişkende aynı girdiğimiz değer olur.margin;top right bottom left;olarakta değeri yazabiliriz.margin:100px 200px; demek üst ve alttan 100px sağ ve soldan 200px demektir.float:left; demek kutuları yan yana soldan başlancak şekilde dizmek demektir.margin-right:20px; her kutu sağdan 20px boşluk bıraksın demektir.<br>
+    inline etiketlere margin değeri girildiğinde sadece sağ-sol değişir alt ve üste etki etmez(span,a)<br>
+    margin:auto; tam ortalar nesneyi yani nesne tam ortada olur her koşulda<br>
+    <div class="box" id="first">box1</div>
+    <div class="box" id="second">box2</div>
+    <div class="box" id="third">box3</div>
+    
+    <span>text1</span>
+    <span>text2</span>
+    <span>text3</span>
+</body>
+
+</html>

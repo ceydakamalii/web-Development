@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /*
+        slideup->eğer element gözüküyorsa yukarıdan aşağı(effect) saklar.
+        slidedown->eğer element gözükmüyorsa yukarıdan aşağı(effect) gösterir.
+        slidetoggle->eğer element gözükmüyorsa gösterir gözüküyorsa saklar.
+        fadein->opacity 0 iken 1 getirir.
+        fadeout->opacity 1 iken 0 getirir.
+        fadeto->opacity değerini değiştiriyor.mesele 0 iken 0.9 a getiriyor
+        fadeToggle->nesne görünüyorsa onu gizler nesne görünmüyorsa gösterir.
+    */
+    </style>
+</head>
+<body>
+    <p>Sıfırdan Web Developer Eğitimi</p>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button> 
+    <button id="slidetoggle">Slide Toggle</button>      
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade to</button>
+    <button id="toggle">Toggle</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#slideup").click(function(){
+                    
+                $("p").slideUp(2000);
+                    
+            });
+                
+            $("#slidedown").click(function(){
+                    
+                $("p").slideDown(1000,function(){
+                    alert("paragraf gösterildi");
+                });
+                    
+            });
+                
+            $("#slidetoggle").click(function(){
+                    
+                $("p").slideToggle("slow",function(){
+                    alert("istediğiniz işlem gerçekleştiriliyor.");
+                });
+                    
+            });
+
+            $("#fadein").click(function(){
+                    
+                $("p").fadeIn("slow");
+                    
+            });
+                
+            $("#fadeout").click(function(){
+                    
+                $("p").fadeOut(1000,function(){
+                    alert("paragraf gösterildi");
+                });
+                    
+            });
+                
+            $("#fadeto").click(function(){
+                    
+                $("p").fadeTo("slow",0.6);
+                    
+            });
+                
+            $("#toggle").click(function(){
+                    
+                $("p").fadeToggle("slow");
+                    
+            });
+                
+                
+                
+    });
+    
+    </script>
+</body>
+</html>

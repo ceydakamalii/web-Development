@@ -1,0 +1,208 @@
+/*font-family: 'Roboto', sans-serif;*/
+body {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background: #222;
+    z-index: 2;
+}
+
+.ayir {
+    height: 38px;
+}
+.image {
+    width: 80px;
+    display: inline-block;
+    float: left;
+    padding: 10px 10px 0 0;
+}
+
+.resim {
+    background: url('resim1.jpg');
+    height: 400px;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.left {
+    width: 70%;
+    float: left;
+}
+
+.button {
+    border-radius: 1px;
+    background-color: #bfbfbf;
+    color: #625a5a;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px 9px 5px 9px;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: #6c7a89;
+    color: #dae1e7;
+}
+
+.right {
+    width: 29%;
+    float: left;
+    margin-left: 1%;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 120px;
+}
+
+.baslik {
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 0px 4px 2px black;
+    margin: 0;
+}
+h4{
+   margin: 0;
+   text-shadow: 6px 1px 8px black;
+}
+
+h1 span {
+    color: #2DB200;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+}
+
+.logo img {
+    height: 40px;
+    margin-top: 7px;
+}
+
+.search {
+    display: inline-block;
+    float: right;
+}
+
+.menu {
+    border-bottom: 1px solid #bbb;
+}
+
+.menu-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-ul a {
+    color: #000;
+}
+
+.menu-ul a:hover {
+    color: #cc181e;
+}
+
+.menu-li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 7px;
+    border-bottom: 3px solid #fff;
+
+}
+
+.menu-li:hover {
+    border-bottom: 3px solid #cc181e;
+}
+
+.isearch {
+    padding: 8px 8px 18px;
+    border: 0;
+    margin-top: 6px;
+    background: transparent;
+    border-bottom: 1px solid #a9a9a9;
+    width: 70px;
+    color: #fff;
+    outline: 0;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.3s;
+    transition-property: width, color;
+}
+
+.isearch:focus {
+    width: 300px;
+    border-bottom: 1px solid #cc181e;
+
+}
+
+footer {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    padding: 25px 0 25px 0;
+    background: #121212;
+    color: #fff;
+}
+
+h2.title {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+}
+
+.line:before,
+.line:after {
+    content: "";
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 100%;
+    width: 20px;
+    margin-right: 10px;
+    top: 9px;
+}
+
+.line:before {
+    left: 100%;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.column-25 {
+    width: 24%;
+    margin-right: 1px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+span.info {
+    display: inline-block;
+}

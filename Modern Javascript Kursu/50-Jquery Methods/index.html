@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .highlight
+        {
+            background-color: yellow;            
+        }
+            
+        .green
+        {
+            background-color: green;
+        }            
+    </style>
+</head>
+<body>
+    <h1>JQuery Helper Methods</h1>
+        
+    <ul>
+        <li>Jquery Selectors</li>
+        <li>Jquery Methods</li>
+        <li>Jquery Animations</li>
+    </ul>
+        
+    <img src="koala.png" width="200">
+        
+    <!--<input id="ad" type="text"  placeholder="Adınızı" value="input değer"/>-->
+    <input id="ad" type="text"  placeholder="Adınızı" />
+    <input id="soyad" type="text" class="green" placeholder="Soyadınız"/>
+    <button id="btnKaydet" onclick="adsoyad();">Kaydet</button>
+    <script>
+        /*Text metodunun get özelliği*/
+        console.log($("h1").text());//JQuery Helper Methods çıktısı
+        console.log($("ul").text()); //Jquery Selectors,Jquery Methods,Jquery Animations alt alta         
+        console.log($("ul li").text());//Jquery Selectors,Jquery Methods,Jquery Animations yan yana
+        /*Text metodunun set özelliği*/
+        $("h1").text("Javascript");
+
+        console.log($("input").val());//boş ilk başta consola bir şey yazılmaz.  
+        $("input").val("Giriniz"); 
+        console.log($("input").val());
+        $("img").attr("width","400 ");  
+        function adsoyad(){
+            var ad=$("#ad").val();
+            var soyad=$("#soyad").val();
+            console.log("Adınız ve soyadınız : "+ad+" "+soyad);
+            $("#ad").addClass("highlight");
+            $("#soyad").removeClass("green");
+            //$("#soyad").toggleClass("green");
+
+        } 
+    </script>
+</body>
+</html>

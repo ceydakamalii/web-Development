@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.yazi1{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    animation: yazi-anim 3s ease;
+    /* position: relative; */
+    z-index: 999;
+    background-color: black;
+    
+}
+.yazi2{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+.yazi2 a{
+    color: orange;
+    text-decoration: none;
+}
+
+@keyframes yazi-anim{
+    0%{
+        margin-bottom: -40px;
+        letter-spacing: 8px;
+    }
+    30%{
+        margin-bottom: -40px;
+        letter-spacing: 30px;
+    }
+    90%{
+        margin-bottom:-40px;
+    }
+}

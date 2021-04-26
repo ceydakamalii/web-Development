@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Popover</title>
+	<style>
+        /*
+            Tooltipten farkı içerik tooltipte hover olayı gerçekleşince gözüküyordu popoverde ise üzerine tıklanınca gözükücek ve popoverde butonun üstüne basınca içerik gözükür fakat tekrar butona basmadığımı halde içerik kaybolmaz bunun kaybolmasını istiyorsak data-trigger="focus" özelliğini eklemeliyiz.
+            data-toggle="popover" o etiketin bir popover oldupunu belirtir.
+            title="popover header" içeriğin başlığı
+            data-content="popover body" içeriğin body kısmı
+            data-trigger="focus" kısmı içerik gözükürken başka bir yere bastığımızda içeriğin kaybolmasını sağlar
+            data-trigger="hover" ise içerik kısmı hover olduğunda gözkür cursorü başka bir yere götürünce ise içerik kaybolur.
+        
+        
+        */
+    
+    
+    </style>
+</head>
+
+<body>
+
+	<div class="container">
+
+
+		<!-- Popover -->
+		<a id="btnPopover" href="#" class="btn btn-primary" data-toggle="popover" title="popover header" data-content="popover body">Toggle popover</a>
+
+		<br><br>
+		<a id="btnPopover" href="#" class="btn btn-danger" data-toggle="popover" data-trigger="focus" title="popover header" data-content="popover body">Toggle popover</a>
+		<br><br>
+		<a id="btnPopover" href="#" class="btn btn-light bg-light" data-toggle="popover" data-trigger="hover" title="popover header" data-content="popover body">Toggle popover</a>
+		<br><br>
+
+		<!-- Popover Positions -->
+
+		<button type="button" class="btn btn-warning" data-toggle="popover" title="popover title" data-content="popover right content" data-placement="right">		
+			Popover right
+		</button>
+
+		<button type="button" class="btn btn-warning" data-toggle="popover" title="popover title" data-content="popover left content" data-placement="left">		
+			Popover left
+		</button>
+
+		<button type="button" class="btn btn-warning" data-toggle="popover" title="popover title" data-content="popover top content" data-placement="top">		
+			Popover top
+		</button>
+
+		<button type="button" class="btn btn-warning" data-toggle="popover" title="popover title" data-content="popover left bottom" data-placement="bottom">		
+			Popover bottom
+		</button>
+
+		<br><br>
+
+		<button type="button" class="btn btn-success" onclick="showPopover()">show popover</button>
+		<button type="button" class="btn btn-success" onclick="hidePopover()">hide popover</button>
+		<button type="button" class="btn btn-success" onclick="togglePopover()">toogle popover</button>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+		$('[data-toggle="popover"]').popover();
+
+
+		function showPopover() {//bu butona basıldığında #btnPopover idli butonu açar açıksada kapatmaz.Sadece konsola show shown yazmaya devam eder
+			$('#btnPopover').popover('show');
+		}
+
+		function hidePopover() {//bu butona basıldığında #btnPopover idli buton açık ise kapatır.
+			$('#btnPopover').popover('hide');
+		}
+
+		function togglePopover() {//bu butona basıldığında #btnPopover idli butonu açar.Eğer açık ise show shown yazmaz aynı şekilde consol kalır.
+			$('#btnPopover').popover('toggle');
+		}
+
+		$('#btnPopover').on('show.bs.popover', function() {
+			console.log('show');
+		});
+
+		$('#btnPopover').on('shown.bs.popover', function() {
+			console.log('shown');
+		});
+
+		$('#btnPopover').on('hide.bs.popover', function() {
+			console.log('hide');
+		});
+
+		$('#btnPopover').on('hidden.bs.popover', function() {
+			console.log('hidden');
+		});
+
+	</script>
+</body>
+
+</html>

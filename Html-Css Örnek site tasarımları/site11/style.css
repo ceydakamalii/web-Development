@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(254, 234, 244);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.all {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /*margin: 0 auto;*/
+}
+
+
+.logo {
+    width: 165px;
+
+
+}
+
+.menu {
+    border-top: 100%;
+    border-bottom: 100%;
+    border-bottom-color: green;
+    border-top-color: green;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: green;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.baslik h1 {
+    color: green;
+    border-bottom: 1px solid green;
+}
+
+.baslik h2 {
+    color: rgb(195, 30, 84);
+}
+
+.baslik p {
+    font-size: 16px;
+    color: #444444;
+}
+
+.bir p b {
+    color: black;
+}
+
+.bir p span {
+    color: rgb(195, 30, 84);
+}
+
+.bir a {
+    color: rgb(138, 80, 146);
+}
+
+.son {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #FF2FBC;
+
+
+
+}
+
+.son a {
+    display: inline-block;
+    text-align: center;
+    color: rgb(134, 0, 135);
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+}
+.footer{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.footer i{
+    display: inline-block;
+    color: white;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 10px solid rgb(195, 30, 84);
+    background-color: rgb(195, 30, 84);
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
